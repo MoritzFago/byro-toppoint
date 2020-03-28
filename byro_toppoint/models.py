@@ -17,7 +17,7 @@ class Beitragsklasse:
     @classproperty
     def choices(cls):
         return (
-            (cls.NORNAL, _("Normal")),
+            (cls.NORMAL, _("Normal")),
             (cls.STUDENT, _("Student/Schüler ab 18")),
             (cls.U18, _("Jugend unter 18")),
             (cls.PASSIV, _("Passiv")),
