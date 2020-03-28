@@ -4,6 +4,25 @@ from django.utils.translation import ugettext_lazy as _
 from byro.common.models.choices import Choices
 
 
+class Beitragsklasse:
+    NORMAL = 0
+    STUDENT = 1
+    U18 = 2
+    PASSIV = 3
+    SOZIAL = 4
+    FAMILIE = 5
+
+    @classproperty
+    def choices(cls):
+        return (
+            (cls.NORNAL, _("Normal")),
+            (cls.STUDENT, _("Student/Schüler ab 18")),
+            (cls.U18, _("Jugend unter 18")),
+            (cls.PASSIV, _("Passiv")),
+            (cls.SOZIAL, _("Sozial")),
+            (cls.FAMILIE, _("Familie"))
+        )
+
 class ToppointProfile(models.Model):
     member = AutoOneToOneField(
             to='members.Member',
@@ -41,21 +60,3 @@ class ToppointProfile(models.Model):
 
     is_address_wrong = models.BooleanField(default=False, verbose_name=_('Addresse fehlerhaft'))
 
-class Beitragsklasse:
-    NORMAL = 0
-    STUDENT = 1
-    U18 = 2
-    PASSIV = 3
-    SOZIAL = 4
-    FAMILIE = 5
-
-    @classproperty
-    def choices(cls):
-        return (
-            (cls.NORNAL, _("Normal")),
-            (cls.STUDENT, _("Student/Schüler ab 18")),
-            (cls.U18, _("Jugend unter 18")),
-            (cls.PASSIV, _("Passiv")),
-            (cls.SOZIAL, _("Sozial")),
-            (cls.FAMILIE, _("Familie"))
-        )
