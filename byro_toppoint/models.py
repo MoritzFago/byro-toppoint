@@ -43,9 +43,10 @@ class ToppointProfile(models.Model):
             null=False,
             blank=False,
     )
-    vermerk = models.TextField(
+    vermerk = models.CharField(
             verbose_name=_('Vermerk'),
             null=False,
+            max_length=1000,
             blank=True,
     )
     beitragsklasse = models.IntegerField(
