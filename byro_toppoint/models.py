@@ -57,5 +57,5 @@ class Beitragsklasse:
             (cls.U18, _("Jugend unter 18")),
             (cls.PASSIV, _("Passiv")),
             (cls.SOZIAL, _("Sozial")),
-            (cls.FAMILIE, _("Familie")
+            (cls.FAMILIE, _("Familie"))
         )
