@@ -58,3 +58,4 @@ class Beitragsklasse:
             (cls.PASSIV, _("Passiv")),
             (cls.SOZIAL, _("Sozial")),
             (cls.FAMILIE, _("Familie")
+        )
