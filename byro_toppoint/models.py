@@ -41,7 +41,7 @@ class ToppointProfile(models.Model):
 
     is_address_wrong = models.BooleanField(default=False, verbose_name=_('Addresse fehlerhaft'))
 
-classe Beitragsklasse:
+class Beitragsklasse:
     NORMAL = 0
     STUDENT = 1
     U18 = 2
