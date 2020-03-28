@@ -1,5 +1,7 @@
 from annoying.fields import AutoOneToOneField
 from django.db import models
+from django.utils.translation import ugettext_lazy as _
+
 
 class ToppointProfile(models.Model):
     member = AutoOneToOneField(
