@@ -1,7 +1,9 @@
 from annoying.fields import AutoOneToOneField
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
+from django.utils.decorators import classproperty
 from byro.common.models.choices import Choices
+
 
 
 class Beitragsklasse:
