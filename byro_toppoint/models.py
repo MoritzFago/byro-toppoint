@@ -1,4 +1,4 @@
-from annoying.fields import AutoOneToOne
+from annoying.fields import AutoOneToOneField
 from django.db import models
 
 class ToppointProfile(models.Model):
